@@ -1,14 +1,18 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
+import 'components/my_textfield.dart';
 
 class LoginPage extends StatelessWidget {
-  const LoginPage({super.key});
+  LoginPage({super.key});
+
+  final usernameContrller = TextEditingController();
+  final passwordController = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.grey[230],
+      backgroundColor: Colors.grey[250],
       body: Center(
         child: SafeArea(
           child: Column(
@@ -31,23 +35,23 @@ class LoginPage extends StatelessWidget {
               SizedBox(
                 height: 22,
               ),
-              Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 33.0),
-                child: TextField(
-                  decoration: InputDecoration(
-                    enabledBorder: OutlineInputBorder(
-                      borderRadius: BorderRadius.all(Radius.circular(33)),
-                      borderSide: BorderSide(color: Colors.white),
-                    ),
-                    focusedBorder: OutlineInputBorder(
-                      borderRadius: BorderRadius.all(Radius.circular(33)),
-                      borderSide: BorderSide(color: Colors.grey.shade300),
-                    ),
-                    fillColor: Colors.grey.shade200,
-                    filled: true,
-                  ),
-                ),
+              MyTextField(
+                controller: usernameContrller,
+                hintText: 'Username',
+                obscureText: false,
               ),
+              SizedBox(
+                height: 10,
+              ),
+              MyTextField(
+                controller: passwordController,
+                hintText: 'password',
+                obscureText: true,
+              ),
+              SizedBox(
+                height: 10,
+              ),
+              Text('Forgot Password?')
             ],
           ),
         ),
