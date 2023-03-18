@@ -1,5 +1,6 @@
-// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
+// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, must_be_immutable
 
+import 'package:authentication_template/services/auth_service.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import '../components/my_textfield.dart';
@@ -8,7 +9,6 @@ import '../components/other_login_buttons.dart';
 
 class LoginPage extends StatefulWidget {
   void Function()? onTap;
-
   LoginPage({super.key, required this.onTap});
 
   @override
@@ -57,6 +57,7 @@ class _LoginPageState extends State<LoginPage> {
 
   @override
   Widget build(BuildContext context) {
+    final size = MediaQuery.of(context).size;
     return Scaffold(
       backgroundColor: Colors.grey[200],
       body: Center(
@@ -70,7 +71,7 @@ class _LoginPageState extends State<LoginPage> {
                 ),
                 Icon(
                   Icons.duo,
-                  size: 150,
+                  size: size.width * .4,
                   color: Colors.grey[850],
                 ),
                 SizedBox(
@@ -154,11 +155,16 @@ class _LoginPageState extends State<LoginPage> {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    OtherLoginButton(imagePath: 'lib/images/apple.png'),
+                    OtherLoginButton(
+                        onTap: () {}, imagePath: 'lib/images/apple.png'),
                     SizedBox(
                       width: 20,
                     ),
-                    OtherLoginButton(imagePath: 'lib/images/google.png')
+                    OtherLoginButton(
+                        onTap: () {
+                          AuthService().signInWithGoogle();
+                        },
+                        imagePath: 'lib/images/google.png')
                   ],
                 ),
                 SizedBox(
@@ -172,7 +178,7 @@ class _LoginPageState extends State<LoginPage> {
                       style: TextStyle(color: Colors.grey[800]),
                     ),
                     SizedBox(
-                      width: 10,
+                      width: size.width * .03,
                     ),
                     GestureDetector(
                       onTap: widget.onTap,

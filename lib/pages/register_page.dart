@@ -1,5 +1,6 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
+import 'package:authentication_template/services/auth_service.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import '../components/my_textfield.dart';
@@ -153,11 +154,16 @@ class _RegisterPageState extends State<RegisterPage> {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    OtherLoginButton(imagePath: 'lib/images/apple.png'),
+                    OtherLoginButton(
+                        onTap: () {}, imagePath: 'lib/images/apple.png'),
                     SizedBox(
                       width: 20,
                     ),
-                    OtherLoginButton(imagePath: 'lib/images/google.png')
+                    OtherLoginButton(
+                        onTap: () {
+                          AuthService().signInWithGoogle();
+                        },
+                        imagePath: 'lib/images/google.png')
                   ],
                 ),
                 SizedBox(

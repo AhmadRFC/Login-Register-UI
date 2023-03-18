@@ -66,7 +66,8 @@ class DefaultFirebaseOptions {
     messagingSenderId: '784841383774',
     projectId: 'authentication-template-27fcb',
     storageBucket: 'authentication-template-27fcb.appspot.com',
-    iosClientId: '784841383774-dpk8lh4er7qklu054pbf7kr09a6higj0.apps.googleusercontent.com',
+    iosClientId:
+        '784841383774-dpk8lh4er7qklu054pbf7kr09a6higj0.apps.googleusercontent.com',
     iosBundleId: 'com.example.authenticationTemplate',
   );
 
@@ -76,7 +77,8 @@ class DefaultFirebaseOptions {
     messagingSenderId: '784841383774',
     projectId: 'authentication-template-27fcb',
     storageBucket: 'authentication-template-27fcb.appspot.com',
-    iosClientId: '784841383774-dpk8lh4er7qklu054pbf7kr09a6higj0.apps.googleusercontent.com',
+    iosClientId:
+        '784841383774-dpk8lh4er7qklu054pbf7kr09a6higj0.apps.googleusercontent.com',
     iosBundleId: 'com.example.authenticationTemplate',
   );
 }
