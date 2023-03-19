@@ -1,16 +1,15 @@
-# authentication_template
+# Login-Register-UI
 
-A new Flutter project.
+This is a Login, Register and a Home page that includes bottom navigation bar,
 
-## Getting Started
+Also Google authentication is implemented, for logging in using your google account.
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Could save you some time by directly implementing it to your projects
+<br>
+<br>
+## Some pictures:
+<br>
+<img src="lib/images/login_page.png" style="width: 30%; height: auto;">
+<img src="lib/images/login_page2.png" style="width: 27.4%; height: auto;">
+<img src="lib/images/home_page.png" style="width: 28.1%; height: auto;">
+<img src="lib/images/register_page.png" style="width: 27%; height: auto;">

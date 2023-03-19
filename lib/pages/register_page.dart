@@ -63,7 +63,7 @@ class _RegisterPageState extends State<RegisterPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.grey[200],
+      backgroundColor: Colors.grey[300],
       body: Center(
         child: SafeArea(
           child: SingleChildScrollView(
@@ -74,7 +74,7 @@ class _RegisterPageState extends State<RegisterPage> {
                   height: 20,
                 ),
                 Icon(
-                  Icons.duo,
+                  Icons.health_and_safety_rounded,
                   size: 150,
                   color: Colors.grey[850],
                 ),

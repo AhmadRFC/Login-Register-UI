@@ -59,7 +59,7 @@ class _LoginPageState extends State<LoginPage> {
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
     return Scaffold(
-      backgroundColor: Colors.grey[200],
+      backgroundColor: Colors.grey[300],
       body: Center(
         child: SafeArea(
           child: SingleChildScrollView(
@@ -70,7 +70,7 @@ class _LoginPageState extends State<LoginPage> {
                   height: 20,
                 ),
                 Icon(
-                  Icons.duo,
+                  Icons.health_and_safety_rounded,
                   size: size.width * .4,
                   color: Colors.grey[850],
                 ),
@@ -79,7 +79,10 @@ class _LoginPageState extends State<LoginPage> {
                 ),
                 Text(
                   'Remember to Stay Positive',
-                  style: TextStyle(color: Colors.grey[800], fontSize: 17),
+                  style: TextStyle(
+                      color: Colors.grey[800],
+                      fontSize: 17,
+                      fontWeight: FontWeight.w600),
                 ),
                 SizedBox(
                   height: 22,
