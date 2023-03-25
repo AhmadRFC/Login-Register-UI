@@ -1,10 +1,12 @@
 # Login-Register-UI
 
-This is a Login, Register and a Home page that includes bottom navigation bar,
+Created this (Login, Register and a Home page) template to save myself a little bit of time when creating new projects, 
 
-Also Google authentication is implemented, for logging in using your google account.
+It includes bottom navigation bar, a simple clear and modern UI,
 
-Could save you some time by directly implementing it to your projects
+Also Google authentication is implemented, to log in directly through your google account.
+
+Works on both IOS & Android
 <br>
 <br>
 ## Some pictures:
