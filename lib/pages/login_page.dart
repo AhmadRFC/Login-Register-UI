@@ -70,7 +70,7 @@ class _LoginPageState extends State<LoginPage> {
                   height: 20,
                 ),
                 Icon(
-                  Icons.health_and_safety_rounded,
+                  Icons.security_rounded,
                   size: size.width * .4,
                   color: Colors.grey[850],
                 ),
